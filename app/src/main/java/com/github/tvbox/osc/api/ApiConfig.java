@@ -338,7 +338,7 @@ public class ApiConfig {
             sourceBeanList.put(siteKey, sb);
         }
         if (sourceBeanList != null && sourceBeanList.size() > 0) {
-            String home = Hawk.get(HawkConfig.HOME_API, "");
+            String home = Hawk.get(HawkConfig.HOME_API, "https://gitee.com/xyaini/youyou/raw/master/xy.json");
             SourceBean sh = getSource(home);
             if (sh == null)
                 setSourceBean(firstSite);
